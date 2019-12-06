@@ -13,6 +13,7 @@ public class MainActivity extends AppCompatActivity {
 
     EditText  ed1,ed2;
     Button bt1;
+    String getUname,getPassword;
 
     @Override
 
@@ -26,7 +27,10 @@ public class MainActivity extends AppCompatActivity {
         bt1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Toast.makeText(getApplicationContext(),"ada fenesh aayi",Toast.LENGTH_LONG).show();
+                getUname=ed1.getText().toString();
+                getPassword=ed2.getText().toString();
+                Toast.makeText(getApplicationContext(),getUname+"adaa",Toast.LENGTH_LONG).show();
+                Toast.makeText(getApplicationContext(),getPassword+"",Toast.LENGTH_LONG).show();
             }
         });
 
